@@ -12,4 +12,8 @@ export class Persona{
   cumplirAnios(){
     this.edad++;
   }
+
+  disminuirEdad(){
+    this.edad--;
+  }
 }

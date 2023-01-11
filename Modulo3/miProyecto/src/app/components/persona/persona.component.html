@@ -1,6 +1,9 @@
 <div class="persona">
   <h4>Nueva Persona</h4>
-  <p>Nombre: {{ persona.nombre }}</p>
-  <p>Apellido: {{ persona.apellido }}</p>
-  <p>Edad: {{ persona.edad }}</p>
+  <input type="text" [(ngModel)]="atributoDePersona.nombre">
+  <p>Nombre: {{ atributoDePersona.nombre }}</p>
+  <p>Apellido: {{ atributoDePersona.apellido }}</p>
+  <p>Edad: {{ atributoDePersona.edad }}</p>
+  <button class="btn btn-primary mb-3" (click)="cumple(atributoDePersona)">Cumplir años</button>
+  <button class="btn btn-secondary mb-3" (click)="noCumple(atributoDePersona)">Disminuir edad</button>
 </div>

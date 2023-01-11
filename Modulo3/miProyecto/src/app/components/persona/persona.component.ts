@@ -11,12 +11,18 @@ import { Persona } from "src/app/models/Persona";
 
 export class PersonaComponent implements OnInit{
 
-  @Input() persona: Persona = new Persona()
+  @Input() atributoDePersona: Persona = new Persona()
 
   constructor(){}
 
-
   ngOnInit(): void {
+  }
+
+  cumple(persona:Persona){
+    persona.cumplirAnios()
+  }
+  noCumple(persona:Persona){
+    persona.disminuirEdad()
   }
 
 }
